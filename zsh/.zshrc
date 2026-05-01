@@ -23,9 +23,7 @@ export PATH="$HOME/Work/zettels/scripts:$PATH"
 
 [ -d "$HOME/zenv/bin" ] && export PATH="$HOME/zenv/bin:$PATH"
 
-if ! grep -qi microsoft /proc/version 2>/dev/null; then
-    [ -f ~/zenv/bin/activate ] && source ~/zenv/bin/activate
-fi
+[ -f ~/zenv/bin/activate ] && source ~/zenv/bin/activate
 
 # =========================
 # ALIASES
