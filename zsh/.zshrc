@@ -3,6 +3,7 @@
 # =========================
 
 export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
 plugins=(vi-mode)
 VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
 
@@ -78,3 +79,9 @@ setopt extendedglob
 # =========================
 
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+# =========================
+# FORCE THEME LAST (fix prompt override)
+# =========================
+
+source $ZSH/themes/robbyrussell.zsh-theme
