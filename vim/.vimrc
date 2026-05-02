@@ -169,13 +169,21 @@ let g:mkdp_command_for_global = 1
 " CODEX ADDITIONS
 " =========================
 
+" =========================
+" CODEX ADDITIONS
+" =========================
+
 command! ArrowFix %s/→/>>/ge
 
 function! ToggleCodexMode()
   if exists("b:codex_mode") && b:codex_mode
     let &l:wrap = b:orig_wrap
     let &l:linebreak = b:orig_linebreak
-    syntax clear CodexComment
+
+    " Clear Codex groups
+    syntax clear CodexBefore
+    syntax clear CodexAfter
+
     echo "Codex mode OFF"
     let b:codex_mode = 0
   else
@@ -185,8 +193,14 @@ function! ToggleCodexMode()
     setlocal wrap
     setlocal linebreak
 
-    syntax match CodexComment /<!--.\{-}-->/
-    highlight CodexComment ctermfg=Yellow guifg=Yellow gui=italic
+    " BEFORE arrow (yellow)
+    syntax match CodexBefore /<!--.\{-}\ze→/ containedin=ALL
+
+    " AFTER arrow (green)
+    syntax match CodexAfter /\zs→.\{-}-->/ containedin=ALL
+
+    highlight CodexBefore ctermfg=Yellow guifg=#d7af00
+    highlight CodexAfter  ctermfg=Green  guifg=#5fd75f gui=bold
 
     echo "Codex mode ON"
     let b:codex_mode = 1

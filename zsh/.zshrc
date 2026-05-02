@@ -44,9 +44,10 @@ alias choc="cd ~/Work/choc-zettels"
 alias writing="cd ~/Work/dbd_zetteln/dbd-writing"
 alias manuscript="cd ~/Work/german-history-codex/manuscript"
 alias codex="cd ~/Work/german-history-codex"
-
+alias dots="cd ~/Work/dbd_dots"
 alias todo="cd ~/Work/dbd_zetteln; ghi edit 3"
 alias dbdlinux="ssh dbdlinux.local"
+
 
 # =========================
 # DISPLAY
