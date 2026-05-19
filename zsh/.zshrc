@@ -15,6 +15,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=$PATH:/usr/local/bin
 export PATH="$HOME/Work/zettels/scripts:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 [ -d "$HOME/.linuxbrew/bin" ] && export PATH="$HOME/.linuxbrew/bin:$PATH"
 
@@ -30,8 +31,7 @@ export PATH="$HOME/Work/zettels/scripts:$PATH"
 # ALIASES
 # =========================
 
-alias hocz="cd ~/Work/zettels/other-research"
-alias docs="cd ~/Work/zettels/other-docs"
+alias forums="cd ~/Work/dbd_zetteln/dbd-writing/course-forums-processing"
 alias zettels="cd ~/Work/zettels"
 alias scripts="builtin cd ~/Work/zettels/scripts"
 alias sandbox="cd ~/Work/zettels/hocz/hoc-research/zettels-core-and-supp"
@@ -40,13 +40,11 @@ alias humanitexts="cd ~/Work/humanitexts"
 alias booksource="cd ~/Work/zettels/book-sphinx/source"
 alias work="cd ~/Work"
 alias choc="cd ~/Work/choc-zettels"
-
+alias zetteln="cd ~/Work/dbd_zetteln"
 alias writing="cd ~/Work/dbd_zetteln/dbd-writing"
 alias manuscript="cd ~/Work/german-history-codex/manuscript"
-alias codex="cd ~/Work/german-history-codex"
 alias dots="cd ~/Work/dbd_dots"
 alias todo="cd ~/Work/dbd_zetteln; ghi edit 3"
-alias dbdlinux="ssh dbdlinux.local"
 
 
 # =========================
