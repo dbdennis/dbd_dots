@@ -45,8 +45,6 @@ alias writing="cd ~/Work/dbd_zetteln/dbd-writing"
 alias manuscript="cd ~/Work/german-history-codex/manuscript"
 alias dots="cd ~/Work/dbd_dots"
 alias todo="cd ~/Work/dbd_zetteln; ghi edit 3"
-alias aicheck="cd /mnt/c/Users/$USER/Downloads/AI_CHECK"
-alias downloads="cd /mnt/c/Users/$USER/Downloads"
 alias illustrations="cd ~/Work//dbd-illustrations-management"
 
 # =========================
